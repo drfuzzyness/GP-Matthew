@@ -128,7 +128,7 @@ int main(int argc, char *argv[])
             
         }
         
-        std::cout << slides[0].xPos;
+//        std::cout << slides[0].xPos;
         
 		SDL_GL_SwapWindow(displayWindow);
 	}

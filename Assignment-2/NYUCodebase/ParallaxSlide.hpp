@@ -6,8 +6,7 @@
 //  Copyright © 2015 Ivan Safrin. All rights reserved.
 //
 
-#ifndef ParallaxSlide_hpp
-#define ParallaxSlide_hpp
+#pragma once
 
 #include <stdio.h>
 
@@ -18,8 +17,6 @@ public:
     float xPos;
     float maxXPos;
     float velocity;
-    ParallaxSlide( float originPos, float startPos, float maxPos, float velocity, GLuint textureID );
+    ParallaxSlide( float originPos, float startPos, float maxPos, float velocity_, GLuint textureID );
     void move();
 };
-
-#endif /* ParallaxSlide_hpp */

@@ -16,6 +16,8 @@
 		344B44AD1BB09A69007115D7 /* parallax-forest-lights.png in Resources */ = {isa = PBXBuildFile; fileRef = 344B44A91BB09A69007115D7 /* parallax-forest-lights.png */; };
 		344B44AE1BB09A69007115D7 /* parallax-forest-middle-trees.png in Resources */ = {isa = PBXBuildFile; fileRef = 344B44AA1BB09A69007115D7 /* parallax-forest-middle-trees.png */; };
 		344B44B11BB0B9FD007115D7 /* ParallaxSlide.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 344B44AF1BB0B9FD007115D7 /* ParallaxSlide.cpp */; settings = {ASSET_TAGS = (); }; };
+		349E82BC1BB2FBFD00126948 /* CoreApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 349E82BA1BB2FBFD00126948 /* CoreApp.cpp */; settings = {ASSET_TAGS = (); }; };
+		349E82BF1BB3016100126948 /* Entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 349E82BD1BB3016100126948 /* Entity.cpp */; settings = {ASSET_TAGS = (); }; };
 		6D5A86AE19AE5C710066C1FD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D5A86AD19AE5C710066C1FD /* Cocoa.framework */; };
 		6D5A86B819AE5C710066C1FD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6D5A86B619AE5C710066C1FD /* InfoPlist.strings */; };
 		6D5A86BA19AE5C710066C1FD /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6D5A86B919AE5C710066C1FD /* main.cpp */; };
@@ -42,6 +44,10 @@
 		344B44AA1BB09A69007115D7 /* parallax-forest-middle-trees.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "parallax-forest-middle-trees.png"; sourceTree = "<group>"; };
 		344B44AF1BB0B9FD007115D7 /* ParallaxSlide.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ParallaxSlide.cpp; sourceTree = "<group>"; };
 		344B44B01BB0B9FD007115D7 /* ParallaxSlide.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ParallaxSlide.hpp; sourceTree = "<group>"; };
+		349E82BA1BB2FBFD00126948 /* CoreApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CoreApp.cpp; sourceTree = "<group>"; };
+		349E82BB1BB2FBFD00126948 /* CoreApp.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CoreApp.hpp; sourceTree = "<group>"; };
+		349E82BD1BB3016100126948 /* Entity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Entity.cpp; sourceTree = "<group>"; };
+		349E82BE1BB3016100126948 /* Entity.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Entity.hpp; sourceTree = "<group>"; };
 		6D5A86AA19AE5C710066C1FD /* NYUCodebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NYUCodebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D5A86AD19AE5C710066C1FD /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		6D5A86B019AE5C710066C1FD /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -177,6 +183,10 @@
 				6DEF23BF1B96CC2600BCE792 /* ShaderProgram.h */,
 				6DEF23C01B96CC2600BCE792 /* vertex.glsl */,
 				6D5A86B919AE5C710066C1FD /* main.cpp */,
+				349E82BD1BB3016100126948 /* Entity.cpp */,
+				349E82BE1BB3016100126948 /* Entity.hpp */,
+				349E82BA1BB2FBFD00126948 /* CoreApp.cpp */,
+				349E82BB1BB2FBFD00126948 /* CoreApp.hpp */,
 				344B44AF1BB0B9FD007115D7 /* ParallaxSlide.cpp */,
 				344B44B01BB0B9FD007115D7 /* ParallaxSlide.hpp */,
 			);
@@ -264,6 +274,8 @@
 				6DEF23C31B96CC2600BCE792 /* ShaderProgram.cpp in Sources */,
 				6DEF23C21B96CC2600BCE792 /* Matrix.cpp in Sources */,
 				6D5A86BA19AE5C710066C1FD /* main.cpp in Sources */,
+				349E82BF1BB3016100126948 /* Entity.cpp in Sources */,
+				349E82BC1BB2FBFD00126948 /* CoreApp.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,6 +397,7 @@
 					/Library/Frameworks/SDL2.framework/Versions/A/Headers,
 				);
 				INFOPLIST_FILE = "NYUCodebase/NYUCodebase-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MatthewConto.NYUCodebase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -408,6 +421,7 @@
 					/Library/Frameworks/SDL2.framework/Versions/A/Headers,
 				);
 				INFOPLIST_FILE = "NYUCodebase/NYUCodebase-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MatthewConto.NYUCodebase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

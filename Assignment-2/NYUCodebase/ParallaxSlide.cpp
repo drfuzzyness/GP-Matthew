@@ -17,7 +17,7 @@
 #include "ParallaxSlide.hpp"
 
 
-ParallaxSlide::ParallaxSlide( float originPos, float startPos, float maxPos, float velocity, GLuint textureID ) : texture(textureID), xPos( startPos ), maxXPos( maxPos ), originXPos(originPos) {
+ParallaxSlide::ParallaxSlide( float originPos, float startPos, float maxPos, float velocity_, GLuint textureID ) : texture(textureID), xPos( startPos ), maxXPos( maxPos ), originXPos(originPos), velocity(velocity_) {
     }
 
 void ParallaxSlide::move() {
