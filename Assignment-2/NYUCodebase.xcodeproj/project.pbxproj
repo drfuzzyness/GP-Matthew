@@ -11,10 +11,6 @@
 		344B44A41BB09859007115D7 /* parallax-forest-front-trees.png in Resources */ = {isa = PBXBuildFile; fileRef = 344B44A01BB09859007115D7 /* parallax-forest-front-trees.png */; settings = {ASSET_TAGS = (); }; };
 		344B44A51BB09859007115D7 /* parallax-forest-lights.png in Resources */ = {isa = PBXBuildFile; fileRef = 344B44A11BB09859007115D7 /* parallax-forest-lights.png */; settings = {ASSET_TAGS = (); }; };
 		344B44A61BB09859007115D7 /* parallax-forest-middle-trees.png in Resources */ = {isa = PBXBuildFile; fileRef = 344B44A21BB09859007115D7 /* parallax-forest-middle-trees.png */; settings = {ASSET_TAGS = (); }; };
-		344B44AB1BB09A69007115D7 /* parallax-forest-back-trees.png in Resources */ = {isa = PBXBuildFile; fileRef = 344B44A71BB09A69007115D7 /* parallax-forest-back-trees.png */; };
-		344B44AC1BB09A69007115D7 /* parallax-forest-front-trees.png in Resources */ = {isa = PBXBuildFile; fileRef = 344B44A81BB09A69007115D7 /* parallax-forest-front-trees.png */; };
-		344B44AD1BB09A69007115D7 /* parallax-forest-lights.png in Resources */ = {isa = PBXBuildFile; fileRef = 344B44A91BB09A69007115D7 /* parallax-forest-lights.png */; };
-		344B44AE1BB09A69007115D7 /* parallax-forest-middle-trees.png in Resources */ = {isa = PBXBuildFile; fileRef = 344B44AA1BB09A69007115D7 /* parallax-forest-middle-trees.png */; };
 		344B44B11BB0B9FD007115D7 /* ParallaxSlide.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 344B44AF1BB0B9FD007115D7 /* ParallaxSlide.cpp */; settings = {ASSET_TAGS = (); }; };
 		349E82BC1BB2FBFD00126948 /* CoreApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 349E82BA1BB2FBFD00126948 /* CoreApp.cpp */; settings = {ASSET_TAGS = (); }; };
 		349E82BF1BB3016100126948 /* Entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 349E82BD1BB3016100126948 /* Entity.cpp */; settings = {ASSET_TAGS = (); }; };
@@ -38,10 +34,6 @@
 		344B44A01BB09859007115D7 /* parallax-forest-front-trees.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "parallax-forest-front-trees.png"; sourceTree = "<group>"; };
 		344B44A11BB09859007115D7 /* parallax-forest-lights.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "parallax-forest-lights.png"; sourceTree = "<group>"; };
 		344B44A21BB09859007115D7 /* parallax-forest-middle-trees.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "parallax-forest-middle-trees.png"; sourceTree = "<group>"; };
-		344B44A71BB09A69007115D7 /* parallax-forest-back-trees.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "parallax-forest-back-trees.png"; sourceTree = "<group>"; };
-		344B44A81BB09A69007115D7 /* parallax-forest-front-trees.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "parallax-forest-front-trees.png"; sourceTree = "<group>"; };
-		344B44A91BB09A69007115D7 /* parallax-forest-lights.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "parallax-forest-lights.png"; sourceTree = "<group>"; };
-		344B44AA1BB09A69007115D7 /* parallax-forest-middle-trees.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "parallax-forest-middle-trees.png"; sourceTree = "<group>"; };
 		344B44AF1BB0B9FD007115D7 /* ParallaxSlide.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ParallaxSlide.cpp; sourceTree = "<group>"; };
 		344B44B01BB0B9FD007115D7 /* ParallaxSlide.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ParallaxSlide.hpp; sourceTree = "<group>"; };
 		349E82BA1BB2FBFD00126948 /* CoreApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CoreApp.cpp; sourceTree = "<group>"; };
@@ -90,10 +82,6 @@
 		6D5A86A119AE5C710066C1FD = {
 			isa = PBXGroup;
 			children = (
-				344B44A71BB09A69007115D7 /* parallax-forest-back-trees.png */,
-				344B44A81BB09A69007115D7 /* parallax-forest-front-trees.png */,
-				344B44A91BB09A69007115D7 /* parallax-forest-lights.png */,
-				344B44AA1BB09A69007115D7 /* parallax-forest-middle-trees.png */,
 				6D5A86B319AE5C710066C1FD /* NYUCodebase */,
 				6D5A86D119AE5C710066C1FD /* NYUCodebaseTests */,
 				6D5A86AC19AE5C710066C1FD /* Frameworks */,
@@ -247,10 +235,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D5A86B819AE5C710066C1FD /* InfoPlist.strings in Resources */,
-				344B44AB1BB09A69007115D7 /* parallax-forest-back-trees.png in Resources */,
-				344B44AC1BB09A69007115D7 /* parallax-forest-front-trees.png in Resources */,
-				344B44AD1BB09A69007115D7 /* parallax-forest-lights.png in Resources */,
-				344B44AE1BB09A69007115D7 /* parallax-forest-middle-trees.png in Resources */,
 				6DEF23C11B96CC2600BCE792 /* fragment.glsl in Resources */,
 				344B44A61BB09859007115D7 /* parallax-forest-middle-trees.png in Resources */,
 				6DE9D2F11BA6AB8C002D599C /* fragment_textured.glsl in Resources */,
@@ -341,7 +325,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
@@ -374,7 +358,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				SDKROOT = macosx;
 			};
 			name = Release;

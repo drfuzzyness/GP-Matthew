@@ -15,7 +15,7 @@ CoreApp::CoreApp() {
     lastFrameTicks = 0.0f;
     deltaTime = 0.0f;
     done = false;
-    
+    pInstance = this;
     
     Setup();
 }
@@ -69,5 +69,15 @@ void CoreApp::UpdateAndRender() {
 
 void CoreApp::Update() {
     
+}
+
+CoreApp* CoreApp::pInstance = NULL;
+
+CoreApp* CoreApp::Instance() {
+    if( !pInstance ) {
+        pInstance = new CoreApp();
+    }
+    
+    return pInstance;
 }
 

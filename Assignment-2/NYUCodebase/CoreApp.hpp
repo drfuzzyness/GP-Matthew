@@ -29,6 +29,7 @@
 
 class CoreApp {
 public:
+    
     CoreApp();
     void Setup();
     void Update();
@@ -36,12 +37,15 @@ public:
     ~CoreApp();
     bool done;
     float deltaTime;
-private:
-    ShaderProgram* program;
-    SDL_Window* displayWindow;
     
+    static CoreApp* Instance();
+    
+    ShaderProgram* program;
     Matrix projectionMatrix;
     Matrix modelMatrix;
+private:
+    static CoreApp* pInstance;
+    SDL_Window* displayWindow;
     Matrix viewMatrix;
     
     float lastFrameTicks;
