@@ -17,9 +17,13 @@
 #include <SDL_opengl.h>
 #include <SDL_image.h>
 
+#include <vector>
+
 #include "ShaderProgram.h"
 #include "Matrix.h"
-#include "ParallaxSlide.hpp"
+#include "Entity.hpp"
+#include "Paddle.hpp"
+
 
 #ifdef _WINDOWS
 #define RESOURCE_FOLDER ""
