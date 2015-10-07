@@ -16,7 +16,6 @@ Entity::Entity( GLuint textureID, float x, float y, float rotation, float width,
 }
 
 void Entity::Draw() {
-
     core->modelMatrix.identity();
     core->modelMatrix.Translate( x, y, 0);
     core->program->setModelMatrix(core->modelMatrix);

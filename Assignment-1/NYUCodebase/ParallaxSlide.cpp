@@ -3,7 +3,6 @@
 //  NYUCodebase
 //
 //  Created by Matthew Conto on 9/21/15.
-//  Copyright © 2015 Ivan Safrin. All rights reserved.
 //
 #ifdef _WINDOWS
 #include <GL/glew.h>

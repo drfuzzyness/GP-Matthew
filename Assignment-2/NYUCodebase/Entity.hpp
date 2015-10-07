@@ -5,10 +5,13 @@
 //  Created by Matthew Conto on 9/23/15.
 //
 
-#pragma once
+#ifndef ENTITY_H
+#define ENTITY_H
 #include "CoreApp.hpp"
 
-using namespace std;
+//using namespace std;
+
+//class CoreApp;
 
 class Entity {
 public:
@@ -29,7 +32,8 @@ public:
     Entity( GLuint textureID, float x, float y, float rotation, float width, float height );
 
 private:
-    vector<float> verticies;
-    vector<float> texCoords;
+    std::vector<float> verticies;
+    std::vector<float> texCoords;
     CoreApp* core;
 };
+#endif

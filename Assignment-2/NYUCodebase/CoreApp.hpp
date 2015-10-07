@@ -5,14 +5,16 @@
 //  Created by Matthew Conto on 9/23/15.
 //
 
-#pragma once
 
+#ifndef CORE_H
+#define CORE_H
 
-
-
+#define RESOURCE_FOLDER "NYUCodebase.app/Contents/Resources/"
 #ifdef _WINDOWS
 #include <GL/glew.h>
+#define RESOURCE_FOLDER ""
 #endif
+
 #include <SDL.h>
 #include <SDL_opengl.h>
 #include <SDL_image.h>
@@ -21,26 +23,26 @@
 
 #include "ShaderProgram.h"
 #include "Matrix.h"
+
 #include "Entity.hpp"
+#include "Ball.hpp"
 #include "Paddle.hpp"
-
-
-#ifdef _WINDOWS
-#define RESOURCE_FOLDER ""
-#else
-#define RESOURCE_FOLDER "NYUCodebase.app/Contents/Resources/"
-#endif
 
 class CoreApp {
 public:
-    
     CoreApp();
     void Setup();
     void Update();
     void UpdateAndRender();
+    GLuint LoadTexture(const char *image_path);
     ~CoreApp();
     bool done;
     float deltaTime;
+    
+    Ball* ball;
+    Paddle* playerOne;
+    Paddle* playerTwo;
+    
     
     static CoreApp* Instance();
     
@@ -53,6 +55,7 @@ private:
     Matrix viewMatrix;
     
     float lastFrameTicks;
-    
-    
+    bool restartGame;
 };
+
+#endif

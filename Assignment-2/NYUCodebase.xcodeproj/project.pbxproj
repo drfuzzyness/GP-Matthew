@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		342A9A4E1BB9F7220066BDE4 /* Paddle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 342A9A4C1BB9F7220066BDE4 /* Paddle.cpp */; settings = {ASSET_TAGS = (); }; };
-		344B44B11BB0B9FD007115D7 /* ParallaxSlide.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 344B44AF1BB0B9FD007115D7 /* ParallaxSlide.cpp */; settings = {ASSET_TAGS = (); }; };
 		349E82BC1BB2FBFD00126948 /* CoreApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 349E82BA1BB2FBFD00126948 /* CoreApp.cpp */; settings = {ASSET_TAGS = (); }; };
 		349E82BF1BB3016100126948 /* Entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 349E82BD1BB3016100126948 /* Entity.cpp */; settings = {ASSET_TAGS = (); }; };
 		34ED80DA1BBC30A5004C2BD3 /* Ball.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 34ED80D81BBC30A5004C2BD3 /* Ball.cpp */; settings = {ASSET_TAGS = (); }; };
+		34ED80DC1BBC379C004C2BD3 /* white.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34ED80DB1BBC379C004C2BD3 /* white.jpg */; };
 		6D5A86AE19AE5C710066C1FD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D5A86AD19AE5C710066C1FD /* Cocoa.framework */; };
 		6D5A86B819AE5C710066C1FD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6D5A86B619AE5C710066C1FD /* InfoPlist.strings */; };
 		6D5A86BA19AE5C710066C1FD /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6D5A86B919AE5C710066C1FD /* main.cpp */; };
@@ -30,14 +30,13 @@
 /* Begin PBXFileReference section */
 		342A9A4C1BB9F7220066BDE4 /* Paddle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Paddle.cpp; sourceTree = "<group>"; };
 		342A9A4D1BB9F7220066BDE4 /* Paddle.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Paddle.hpp; sourceTree = "<group>"; };
-		344B44AF1BB0B9FD007115D7 /* ParallaxSlide.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ParallaxSlide.cpp; sourceTree = "<group>"; };
-		344B44B01BB0B9FD007115D7 /* ParallaxSlide.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ParallaxSlide.hpp; sourceTree = "<group>"; };
 		349E82BA1BB2FBFD00126948 /* CoreApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CoreApp.cpp; sourceTree = "<group>"; };
 		349E82BB1BB2FBFD00126948 /* CoreApp.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CoreApp.hpp; sourceTree = "<group>"; };
 		349E82BD1BB3016100126948 /* Entity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Entity.cpp; sourceTree = "<group>"; };
 		349E82BE1BB3016100126948 /* Entity.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Entity.hpp; sourceTree = "<group>"; };
 		34ED80D81BBC30A5004C2BD3 /* Ball.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Ball.cpp; sourceTree = "<group>"; };
 		34ED80D91BBC30A5004C2BD3 /* Ball.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Ball.hpp; sourceTree = "<group>"; };
+		34ED80DB1BBC379C004C2BD3 /* white.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = white.jpg; sourceTree = "<group>"; };
 		6D5A86AA19AE5C710066C1FD /* NYUCodebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NYUCodebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D5A86AD19AE5C710066C1FD /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		6D5A86B019AE5C710066C1FD /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -80,6 +79,7 @@
 		6D5A86A119AE5C710066C1FD = {
 			isa = PBXGroup;
 			children = (
+				34ED80DB1BBC379C004C2BD3 /* white.jpg */,
 				6D5A86B319AE5C710066C1FD /* NYUCodebase */,
 				6D5A86D119AE5C710066C1FD /* NYUCodebaseTests */,
 				6D5A86AC19AE5C710066C1FD /* Frameworks */,
@@ -168,13 +168,11 @@
 				349E82BD1BB3016100126948 /* Entity.cpp */,
 				349E82BE1BB3016100126948 /* Entity.hpp */,
 				349E82BA1BB2FBFD00126948 /* CoreApp.cpp */,
+				349E82BB1BB2FBFD00126948 /* CoreApp.hpp */,
 				342A9A4C1BB9F7220066BDE4 /* Paddle.cpp */,
 				342A9A4D1BB9F7220066BDE4 /* Paddle.hpp */,
 				34ED80D81BBC30A5004C2BD3 /* Ball.cpp */,
 				34ED80D91BBC30A5004C2BD3 /* Ball.hpp */,
-				349E82BB1BB2FBFD00126948 /* CoreApp.hpp */,
-				344B44AF1BB0B9FD007115D7 /* ParallaxSlide.cpp */,
-				344B44B01BB0B9FD007115D7 /* ParallaxSlide.hpp */,
 			);
 			name = Code;
 			sourceTree = "<group>";
@@ -233,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D5A86B819AE5C710066C1FD /* InfoPlist.strings in Resources */,
+				34ED80DC1BBC379C004C2BD3 /* white.jpg in Resources */,
 				6DEF23C11B96CC2600BCE792 /* fragment.glsl in Resources */,
 				6DE9D2F11BA6AB8C002D599C /* fragment_textured.glsl in Resources */,
 				6D5A86BE19AE5C710066C1FD /* Credits.rtf in Resources */,
@@ -248,7 +247,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				344B44B11BB0B9FD007115D7 /* ParallaxSlide.cpp in Sources */,
 				6DEF23C31B96CC2600BCE792 /* ShaderProgram.cpp in Sources */,
 				6DEF23C21B96CC2600BCE792 /* Matrix.cpp in Sources */,
 				6D5A86BA19AE5C710066C1FD /* main.cpp in Sources */,
