@@ -1,13 +1,14 @@
 //
-//  CoreApp.hpp
+//  CoreApp.h
 //  NYUCodebase
 //
 //  Created by Matthew Conto on 9/23/15.
 //
 
 
-#ifndef CORE_H
-#define CORE_H
+//#ifndef CORE_H
+//#define CORE_H
+#pragma once
 
 #define RESOURCE_FOLDER "NYUCodebase.app/Contents/Resources/"
 #ifdef _WINDOWS
@@ -24,9 +25,11 @@
 #include "ShaderProgram.h"
 #include "Matrix.h"
 
-#include "Entity.hpp"
-#include "Ball.hpp"
-#include "Paddle.hpp"
+#include "Entity.h"
+//#include "Ball.h"
+//#include "Paddle.h"
+
+//class Entity;
 
 class CoreApp {
 public:
@@ -39,10 +42,9 @@ public:
     bool done;
     float deltaTime;
     
-    Ball* ball;
-    Paddle* playerOne;
-    Paddle* playerTwo;
-    
+    Entity ball;
+    Entity playerOne;
+    Entity playerTwo;
     
     static CoreApp* Instance();
     
@@ -58,4 +60,4 @@ private:
     bool restartGame;
 };
 
-#endif
+//#endif

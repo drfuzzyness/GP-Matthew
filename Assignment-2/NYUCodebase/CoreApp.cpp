@@ -5,13 +5,10 @@
 //  Created by Matthew Conto on 9/23/15.
 //
 
-#include "CoreApp.hpp"
+#include "CoreApp.h"
 
 CoreApp::~CoreApp() {
     delete program;
-    delete ball;
-    delete playerOne;
-    delete playerTwo;
 }
 
 CoreApp::CoreApp() {
@@ -38,7 +35,7 @@ GLuint CoreApp::LoadTexture(const char *image_path) {
 
 void CoreApp::Setup() {
     SDL_Init(SDL_INIT_VIDEO);
-    displayWindow = SDL_CreateWindow("Forest", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 600, 600, SDL_WINDOW_OPENGL);
+    displayWindow = SDL_CreateWindow("Pong", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 600, 600, SDL_WINDOW_OPENGL);
     SDL_GLContext context = SDL_GL_CreateContext(displayWindow);
     SDL_GL_MakeCurrent(displayWindow, context);
     #ifdef _WINDOWS
@@ -60,9 +57,9 @@ void CoreApp::Setup() {
     
     GLuint whiteTexture = LoadTexture(RESOURCE_FOLDER"white.jpg");
     
-    ball = new Ball( 1.0f, 1.0f, 1.0f, whiteTexture, 0, 0, 0, .5f, .5f );
-    playerOne = new Paddle( 6.0, 1.5f, whiteTexture, -6.0f, 0, 0, .1f, .5f );
-    playerTwo = new Paddle( 6.0, 1.5f, whiteTexture, 6.0f, 0, 0, .1f, .5f );
+//    ball =
+//    paddleOne =
+//    paddleTwo
 }
 
 void CoreApp::UpdateAndRender() {
@@ -89,9 +86,9 @@ void CoreApp::UpdateAndRender() {
     Update();
     
         // draw objects
-    ball->Draw();
-    playerOne->Draw();
-    playerTwo->Draw();
+//    ball.Draw();
+//    playerOne->Draw();
+//    playerTwo->Draw();
     
     SDL_GL_SwapWindow(displayWindow);
 }

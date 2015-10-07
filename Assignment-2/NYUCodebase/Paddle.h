@@ -5,11 +5,12 @@
 //  Created by Matthew Conto on 9/28/15.
 //
 
-#ifndef PADDLE_H
-#define PADDLE_H
+#pragma once
+//#ifndef PADDLE_H
+//#define PADDLE_H
 //#include "Entity.hpp"
-//#include "CoreApp.hpp"
-#include "Entity.hpp"
+#include "CoreApp.h"
+//#include "Entity.h"
 
 class Paddle : public Entity {
 public:
@@ -22,4 +23,4 @@ public:
     
 };
 
-#endif
+//#endif

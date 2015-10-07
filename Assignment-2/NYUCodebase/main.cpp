@@ -1,4 +1,4 @@
-#include "CoreApp.hpp"
+#include "CoreApp.h"
 
 SDL_Window* displayWindow;
 
