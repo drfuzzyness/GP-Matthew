@@ -100,6 +100,10 @@ void CoreApp::GotoMainMenu() {
     clearColorBit = true;
     score = 0;
     lives = 3;
+    player = Entity();
+    player.x = GRD_LEFT + 1.5f;
+    player.y = GRD_BOT + .5f;
+    player.sprite = SpriteSheet(invadersTexture, 16.0f/80.0f, 16.0f/48.0f, 16.0f/80.0f, 16.0f/48.0f, 1.0f);
         // Initialize the object list to all we need
 }
 
@@ -198,7 +202,9 @@ void CoreApp::UpdateAndRender() {
             DrawText(fontTexture, "INVADERS FROM", 1.0, 0, -7.0f, 4.0f);
             DrawText(fontTexture, "SPACE", 2.0, 0, -6.5f, 2.5f);
             DrawText(fontTexture, "CREATIVE COMMONS EDITION ", 0.3, 0, -7.0f, 1.0f);
+            DrawText(fontTexture, "SPACE TO FIRE", 0.3, 0, -7.0f, -5.5f);
             DrawText(fontTexture, "ENTER TO BEGIN", 0.5, 0, -7.0f, -6.0f);
+            player.Render( program );
             break;
         case GAME:
             player.Render(program);
