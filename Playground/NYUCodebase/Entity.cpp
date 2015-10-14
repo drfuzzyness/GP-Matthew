@@ -8,6 +8,7 @@
 #include "Entity.h"
 
 Entity::Entity() :
+    active(true),
     x(0.0f),
     y(0.0f),
     width(0.0f),

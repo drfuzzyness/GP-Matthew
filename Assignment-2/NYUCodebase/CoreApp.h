@@ -51,6 +51,8 @@ public:
     ShaderProgram* program;
     Matrix projectionMatrix;
     Matrix modelMatrix;
+    
+    void DrawSpriteSheetSprite(int index, int spriteCountX, int spriteCountY);
 private:
     static CoreApp* pInstance;
     SDL_Window* displayWindow;
