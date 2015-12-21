@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="40" height="23" tilewidth="32" tileheight="32" nextobjectid="7">
+ <tileset firstgid="1" name="Tiny Platform Quest Tiles_0" tilewidth="32" tileheight="32" tilecount="256">
+  <image source="Tiny Platform Quest Tiles_0.png" width="512" height="512"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="40" height="23">
+  <data encoding="base64" compression="zlib">
+   eJztlEFOwzAQRbOpRMMFqlyMiIoFlIos2CAhIZbQ0rrdcYSu2l6g5+tYmi99WY5xnVjNgsWTHSdOnr5nUhVFUUUyUf5a890PPdOF2PdPAuTw+udyNgNwCLmZYrh1tFaG6GZZqd+1Pa7pNxdmwnPC3kVmP+v2IjTCbwe/vnsYmVm3o/DW4XyNkrLfOjwpM1p/FO6VQ6Lf5kK/qefantuH8K5z3NsJd8Jny9nG1CS72TPeRnrxmv32q9I4zzSEux/5hnL9Vi/0sJuhz8sFfnWLX+VZR75fnlwZ/JuXNLJbKTxE+NUJfjG1B6clZbhVtxvhVseSfKc0LyP9UjDkBEfU4Y8wVjdmRIx1hJ/bH335wYnnqMW9cNLvjzyO7NfWB6ks1Il7A3PXD7AXnHP5VZTZijAORwU5hujTDRmyi8+vVj/sqSnPXF5t9Wg8cx85MwNnInyn2Q==
+  </data>
+ </layer>
+ <objectgroup name="Object Layer 1">
+  <object id="5" name="player" type="start" gid="77" x="206.818" y="512.97" width="32" height="32"/>
+ </objectgroup>
+</map>
